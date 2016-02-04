@@ -1,0 +1,27 @@
+{
+  "name": "slide-html-css",
+  "authors": [
+    "Donovan Tengblad <purplefish32@gmail.com>"
+  ],
+  "description": "Slide HTML CSS",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Slides",
+    "HTML",
+    "CSS"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "impress.js": "~0.5.3"
+  }
+}

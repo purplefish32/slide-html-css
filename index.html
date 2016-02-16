@@ -1,97 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Présentation HTML/CSS</title>
+    <link rel="stylesheet" href="lib/syntaxhighlighter/styles/shCore.css">
+    <link rel="stylesheet" href="lib/syntaxhighlighter/styles/shThemeDefault.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div id="impress">
-    <div class="step">
-        <h1>A propos du cours</h1>
-        <strong>Donovan Tengblad</strong>
+<article class="jmpress">
+    <section class="step">
+        <h1>HTML / CSS</h1>
+    </section>
+    <section class="step" id="Presentation">
+        <h2>A propos du cours</h2>
+        <h3>Donovan Tengblad</h3>
         <ul>
             <li>Chef de projet web - Université Grenoble Alpes</li>
             <li>Cours et exercices sur : http://XXXXXXX</li>
-            <li>Mail : donovan.tengblad@u-grenoble3.fr</li>
+            <li>Mail : <a href="mailto:donovan.tengblad@u-grenoble3.fr">donovan-tengblad@u-grenoble3.fr</a></li>
             <li>Github : <a href="https://github.com/purplefish32">purplefish32</a></li>
         </ul>
-    </div>
-    <div class="step">
-        <h1>HTML5, CSS3 Avancé</h1>
-        <h2>Les transitions, animations, videos, audio</h2>
-    </div>
-    <div class="step">
-        <h1>Une image et sa legende</h1>
+    </section>
+    <section class="step">
+        <h2>BBS : la préhistoire de l'Internet</h2>
+        <img src="img/bbs.png" alt="Wildcat BBS">
+    </section>
+    <section class="step">
+        <h2>Excalibur</h2>
+        <img width="80%" src="img/excalibur.jpg" alt="Excalibur BBS">
+    </section>
+    <section class="step">
+        <h2>HTML/XHTML</h2>
+        <img width="80%" src="img/early-html.jpg" alt="HTML">
+    </section>
+    <section class="step">
+        <h2>Flash</h2>
+        <img width="80%" src="img/flash.jpg" alt="Flash">
+    </section>
+     <section class="step">
+        <h2>Flash - The end</h2>
+        <img width="50%" src="img/jobs.jpg" alt="The end of Flash">
+    </section>
+    <section class="step">
+        <img src="img/html-css.png" alt="HTML5, CSS3">
+    </section>
+    <section class="step">
+        <h2>Un peu de concret</h2>
+        <h3>Faire son CV</h3>
+    </section>
+    <section class="step">
+        <h2>HTML5, CSS3 Avancé</h2>
+    </section>
+    <section class="step">
+        <h2>Organisation et performance</h2>
+        <h3>Strategie et structure</h3>
         <ul>
-            <li>Un codage spécifique pour indiquer la légende d'une image ou photo</li>
-            <li>Permet aux moteurs et autres outils de mieux indexer le contenu</li>
+            <li>Concevoir des sytèmes et pas des pages</li>
+            <li>Séparer la structure du look</li>
+            <li>Séparer le contenu du conteneur</li> <!--Dépendance parent-->
         </ul>
-    </div>
+    </section>
+    <section class="step">
+        <h2>Responsive design</h2>
+        <img src="img/responsive.jpg" alt="Responsive">
+    </section>
+    <section class="step">
+        <h2>Responsive design</h2>
+        <h3>Media Queries</h3>
+        <pre class="brush: xml">
+            <style>
+                @media not|only mediatype and (mediafeature) {
+                    CSS-Code;
+                }
+            </style>
 
-    <div class="step">
-        <h1>Une image et sa legende - Exemple</h1>
-        <iframe src="examples/figure.html" frameborder="0" width="800" height="600"></iframe>
-    </div>
+            <link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
 
-    <div class="step">
-        XXXXXX Example source code figure.html
-        <script src="https://gist.github.com/purplefish32/ef7458d33c3b7e1b6649.js"></script>
-    </div>
+            // mediatype : Types de médias
+            //
+            // all     Tout type de médias.
+            // print   Imprimantes.
+            // screen  Ecrans, tablets, smart-phones etc.
+            // speech  Synthetiseurs vocaux.
 
-    <div class="step">
-        <h1>Audio</h1>
-    </div>
+            // mediafeature : propriété du média
+            // max-width   Largeur maximale
+            // orientation Orientation d'un écran
+            // http://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+        </pre>
+    </section>
+    <section class="step">
+        <h2>Responsive design</h2>
+        <h3>Media Queries : Breakpoints</h3>
+        <img src="img/device-breakpoints.png" alt="Device breakpoints">
+    </section>
+    <section class="step">
+        <h2>Responsive design</h2>
+        <h3>Media Queries : Breakpoints</h3>
+        <pre class="brush: xml">
+            <style>
+                @media only screen and (min-width: 768px) {
+                    /* tablets and desktop */
+                }
 
-    <div class="step">
-        <h1>Vidéo</h1>
-    </div>
+                @media only screen and (max-width: 767px) {
+                    /* phones */
+                }
 
-    <div class="step">
-        <h1>Transitions</h1>
-    </div>
-    <div class="step">
-        <h1>Transformation</h1>
-    </div>
+                @media only screen and (max-width: 767px) and (orientation: portrait) {
+                    /* portrait phones */
+                }
+            </style>
+        </pre>
+    </section>
+    <section class="step">
+        <h2>Responsive design</h2>
+        <h3>Media Queries : Grille</h3>
+        <pre class="brush: css">
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        </pre>
+    </section>
+    <section class="step">
+        <h2>Frameworks HTML/CSS</h2>
+        <ul>
+            <li>Blueprint : http://www.blueprintcss.org</li>
+            <li>Pure : http://purecss.io</li>
+            <li>ZURB Foundation : http://foundation.zurb.com</li>
+            <li>Skeleton : http://getskeleton.com</li>
+            <li>Bootstrap : http://getbootstrap.com</li>
+        </ul>
+    </section>
+    <section class="step">
+        <h2>Twitter Bootstrap</h2>
+    </section>
+    <section class="step">
+        <h2>Faire un site avec Bootstrap</h2>
+    </section>
+    <section class="step">
+        <h2>FIN</h2>
+    </section>
+</article>
 
-    <div class="step">
-        <h1>Animations</h1>
-    </div>
-
-    <div class="step">
-        <h1>Responsive design</h1>
-    </div>
-
-    <div class="step">
-        <h1>Media Queries</h1>
-    </div>
-
-    <div class="step">
-        <h1>Framework</h1>
-    </div>
-
-    <div class="step">
-        <h1>Bootstrap</h1>
-    </div>
-
-    <div class="step">
-        <h1>Google fonts</h1>
-    </div>
-
-    <div class="step">
-        <h1>Meterial Design</h1>
-    </div>
-
-    <div class="step">
-        <h1>Stockage des données</h1>
-    </div>
-
-    <div class="step">
-        <h1>FIN</h1>
-    </div>
-</div>
-
-<script type="text/javascript" src="bower_components/impress.js/js/impress.js"></script>
-<script>impress().init();</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/syntaxhighlighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="lib/syntaxhighlighter/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="lib/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="lib/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script type="text/javascript" src="lib/jmpress.custom.js"></script>
+<script>$('.jmpress').jmpress(); </script>
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 </html>

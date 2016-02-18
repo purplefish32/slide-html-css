@@ -1,34 +1,20 @@
-body {
-    font-family: 'PT Sans', sans-serif;
-    
+body {    
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
 
     -webkit-font-smoothing: antialiased;
-    pointer-events: none; 
 }
-
-#impress { pointer-events: auto; }
 
 /* COMMON STEP STYLES */
 
 .step {
     width: 1000px;
     padding: 20px;
-    text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
     -ms-box-sizing:     border-box;
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
-    font-family: georgia, serif;
-    line-height: 1.5;
     -webkit-transition: opacity 0.2s;
     -moz-transition:    opacity 0.2s;
     -ms-transition:     opacity 0.2s;
@@ -39,9 +25,4 @@ body {
 /* fade out inactive slides */
 .step:not(.active) {
     opacity: 0;
-}
-
-#overview {
-    z-index: -1;
-    padding: 0;
 }

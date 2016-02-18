@@ -5,6 +5,9 @@
     <title>Présentation HTML/CSS</title>
     <link rel="stylesheet" href="lib/syntaxhighlighter/styles/shCore.css">
     <link rel="stylesheet" href="lib/syntaxhighlighter/styles/shThemeDefault.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="components/fallback.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,9 +20,9 @@
         <h3>Donovan Tengblad</h3>
         <ul>
             <li>Chef de projet web - Université Grenoble Alpes</li>
-            <li>Cours et exercices sur : http://XXXXXXX</li>
             <li>Mail : <a href="mailto:donovan.tengblad@u-grenoble3.fr">donovan-tengblad@u-grenoble3.fr</a></li>
             <li>Github : <a href="https://github.com/purplefish32">purplefish32</a></li>
+            <li>Cours et exercices sur : https://github.com/purplefish32/slide-html-css</li>
         </ul>
     </section>
     <section class="step">
@@ -46,10 +49,6 @@
         <img src="img/html-css.png" alt="HTML5, CSS3">
     </section>
     <section class="step">
-        <h2>Un peu de concret</h2>
-        <h3>Faire son CV</h3>
-    </section>
-    <section class="step">
         <h2>HTML5, CSS3 Avancé</h2>
     </section>
     <section class="step">
@@ -58,8 +57,122 @@
         <ul>
             <li>Concevoir des sytèmes et pas des pages</li>
             <li>Séparer la structure du look</li>
-            <li>Séparer le contenu du conteneur</li> <!--Dépendance parent-->
+            <li>Séparer le contenu du conteneur</li>
+            <li>CSS Orienté objet</li>
+            <li>Eviter les dépendances sur un élément parent</li>
+            <li>Validation HTML / CSS</li>
         </ul>
+    </section>
+    <section class="step">
+        <h2>Organisation et performance</h2>
+        <h3>Strategie et structure</h3>
+        <ul>
+            <li>Reset CSS</li>
+            <li>Layout</li>
+            <li>Typography</li>
+            <li>components</li>
+            <li>styles</li>
+            <li>etc...</li>
+        </ul>
+    </section>
+    <section class="step">
+        <h2>Organisation et performance</h2>
+        <h3>Reset CSS</h3>
+        <ul>
+            <li>Surcharge les styles par défaut des navigateurs</li>
+            <li>Uniformisation entre les differents navigateurs</li>
+            <li>Valeurs par défaut "Raisonable" des polices et des tableaux</li>
+        </ul>
+    </section>
+    <section class="step">
+        <h2>Reset CSS</h2>
+
+        <pre class="brush: css">
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+               v2.0 | 20110126
+               License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p blockquote, pre, 
+            a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, 
+            strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, 
+            label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+            details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
+            section, summary, time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body { line-height: 1; }
+            ol, ul { list-style: none; }
+            blockquote, q { quotes: none; }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+        </pre>
+        
+    </section>
+    <section class="step">
+        <h2>Structure</h2>
+        <h3>Layout / Grille</h3>
+        <pre class="brush: css">
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        </pre>
+    </section>
+    <section class="step">
+        <h2>Typographie</h2>
+        <ul>
+            <li>fonts.css</li>
+            <li>Google fonts : https://www.google.com/fonts</li>
+            <li>Font Awsome : https://fortawesome.github.io/Font-Awesome</li>
+        </ul>
+    </section>
+    <section class="step">
+        <h2>Components</h2>
+        <ul>
+            <li>Menu</li>
+            <li>Messages d'information</li>
+            <li>Tableaux</li>
+            <li>Pagination</li>
+            <li>Pied de paage</li>
+            <li>etc...</li>
+        </ul>
+    </section>
+    <section class="step">
+        <h2>Style propre de la page</h2>
+        <ul>
+            <li>Couleurs</li>
+            <li>Surcharges</li>
+            <li>etc...</li>
+        </ul>
+    </section>
+    <section class="step">
+        <h2>Un peu de concret</h2>
+        <h3>Faire son CV</h3>
     </section>
     <section class="step">
         <h2>Responsive design</h2>
@@ -115,22 +228,8 @@
         </pre>
     </section>
     <section class="step">
-        <h2>Responsive design</h2>
-        <h3>Media Queries : Grille</h3>
-        <pre class="brush: css">
-            .col-1 {width: 8.33%;}
-            .col-2 {width: 16.66%;}
-            .col-3 {width: 25%;}
-            .col-4 {width: 33.33%;}
-            .col-5 {width: 41.66%;}
-            .col-6 {width: 50%;}
-            .col-7 {width: 58.33%;}
-            .col-8 {width: 66.66%;}
-            .col-9 {width: 75%;}
-            .col-10 {width: 83.33%;}
-            .col-11 {width: 91.66%;}
-            .col-12 {width: 100%;}
-        </pre>
+        <h2>Un peu de concret</h2>
+        <h3>Faire son CV</h3>
     </section>
     <section class="step">
         <h2>Frameworks HTML/CSS</h2>
@@ -144,12 +243,40 @@
     </section>
     <section class="step">
         <h2>Twitter Bootstrap</h2>
+        <ul>
+            <li>Icons</li>
+            <li>Menus</li>
+            <li>Fil d'ariane</li>
+            <li>Pagination</li>
+            <li>Labels</li>
+            <li>Badges</li>
+            <li>Alerts</li>
+            <li>Onglets</li>
+            <li>Vignettes</li>
+            <li>Barres de progression</li>
+            <li>Tableaux</li>
+            <li>...</li>
+        </ul>
     </section>
     <section class="step">
         <h2>Faire un site avec Bootstrap</h2>
     </section>
     <section class="step">
         <h2>FIN</h2>
+        <h3>Quelques liens</h3>
+        <ul>
+            <li>https://github.com/sotayamashita/awesome-css</li>
+            <li>https://github.com/ikkou/awesome-css</li>
+            <li>http://www.mezzoblue.com/zengarden/alldesigns/</li>
+        </ul>
+        <h3>La suite</h3>
+        <ul>
+            <li>Javascript</li>
+            <li>Bower</li>
+            <li>SAS, LESS</li>
+            <li>Mimification / compression</li>
+            <li>Outils de build : Grunt, Gulp</li>
+        </ul>
     </section>
 </article>
 

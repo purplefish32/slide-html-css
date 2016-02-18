@@ -1,0 +1,29 @@
+h1 {
+	font-size: 80px;
+    color: red;
+	margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 60px;
+    color: blue;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 40px;
+    color: green;
+    margin-bottom: 20px;
+}
+
+a {
+	color: blue;
+	cursor: pointer;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic}
+
+ul {
+    font-size: 24px;
+}
